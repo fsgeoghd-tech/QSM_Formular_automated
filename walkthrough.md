@@ -24,30 +24,7 @@ Das Skript:
 4. **Pausiert** nach jedem Eintrag zur manuellen Überprüfung
 5. Du drückst "Resume" im Browser zum Fortfahren
 
-## Wichtige Hinweise
-
-### Datenfilterung
-
-Von 60 CSV-Zeilen werden nur ~22 verarbeitet - das sind die tatsächlich abgeschickten Anträge. Abgebrochene Formulare (ohne Datum) werden automatisch übersprungen.
-
-### Feldmapping
-
-Fuzzy Matching findet Spalten auch bei Sonderzeichen:
-- "Antragstitel" findet "Antragstitel\xa0"
-- "Name und Email" findet "Name und Email-Adresse der Antragstellerin..."
-
-### Name/Email Parsing
-
-Unterstützt verschiedene Formate:
-- `pig@uni-heidelberg.de` → nur Email
-- `Max Mustermann, max@email.de` → Name + Email  
-- `Max Mustermann max@email.de` → Name + Email
-
-### Feste Werte
-
-- **Bewirtschaftende Einrichtung**: "Geographisches Institut"
-- **Studienfachschaft**: "13" (Geographie)
-- **Captcha**: "Neckar"
+## Wichtige Hinweie
 
 ## Konfiguration
 
